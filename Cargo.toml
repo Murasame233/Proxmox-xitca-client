@@ -1,0 +1,22 @@
+[package]
+name = "proxmox-xitca-client"
+version = "0.0.1"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+http = { version = "1.1.0" }
+openssl = { version = "0.10.64" }
+serde = { version = "1.0.197", features = ["derive"] }
+# Json
+serde_json = { version = "1.0.114" }
+serde_urlencoded = { version = "0.7.1" }
+serde_with = { version = "3.6.1" }
+xitca-client = { git = "https://github.com/HFQR/xitca-web", features = [
+    "compress",
+    "openssl",
+] }
+
+[dev-dependencies]
+tokio = { version = "1", features = ["full"] }
