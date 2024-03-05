@@ -1,4 +1,3 @@
-# Intro
 ## Proxmox Client
 - Xitca-client
 - Rust
